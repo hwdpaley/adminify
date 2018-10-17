@@ -5,7 +5,7 @@ import config from './config'
 import store from './store/'
 global.store = store
 
-import router from './router'
+import router from './router/'
 import i18n from './i18n/'
 // import menu from './menu'
 import Vuetify from 'vuetify'
@@ -56,19 +56,19 @@ new Vue({
   store,
   router,
   render: h => h(App),
-  mounted () {
+  mounted() {
 
   },
   methods: {
-    back () {
+    back() {
       this.$router.go(-1)
     }
   },
-  created () {
+  created() {
     // this.$http.get('/users/1').then(({data}) => console.log(data))
     global.$t = this.$t
     // fetch menu from server
-    this.$http.get('/menu').then(({data}) => {
+    this.$http.get('/menu').then(({ data }) => {
       this.$store.commit('setMenu', data)
     })
     this.$store.dispatch('checkPageTitle', this.$route.path)
