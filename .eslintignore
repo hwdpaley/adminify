@@ -2,4 +2,5 @@ build/*.js
 config/*.js
 /dist/
 /*.js
+router/*.js
 /test/unit/coverage/

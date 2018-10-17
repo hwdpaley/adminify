@@ -2,11 +2,11 @@ import Vue from 'vue'
 import helper from './helper'
 global.helper = helper
 import config from './config'
-import store from './store/'
+import store from './store'
 global.store = store
 
-import router from './router/'
-import i18n from './i18n/'
+import router from '@/router'
+import i18n from '@/i18n/'
 // import menu from './menu'
 import Vuetify from 'vuetify'
 Vue.use(Vuetify)
@@ -24,7 +24,7 @@ Vue.use(VueTimeago, {
   name: 'timeago', // component name, `timeago` by default
   locale: config.locale,
   locales: {
-    'en': require('vue-timeago/locales/en-US.json'),
+    'zh-CN': require('vue-timeago/locales/zh-CN.json'),
     [config.locale]: require(`vue-timeago/locales/${config.locale}.json`)
   }
 })
@@ -56,15 +56,15 @@ new Vue({
   store,
   router,
   render: h => h(App),
-  mounted() {
+  mounted () {
 
   },
   methods: {
-    back() {
+    back () {
       this.$router.go(-1)
     }
   },
-  created() {
+  created () {
     // this.$http.get('/users/1').then(({data}) => console.log(data))
     global.$t = this.$t
     // fetch menu from server

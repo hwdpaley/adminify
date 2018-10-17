@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <h3 class="my-3">About page</h3>
+        <h3 class="my-3">关于</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto cum debitis eligendi et eveniet facere fugiat illo incidunt libero, maxime nihil, non nulla omnis quis sint sunt velit voluptates.
         </p>
@@ -14,12 +14,11 @@
 </template>
 
 <script>
-    export default {
-      data () {
-        return {}
-      },
+export default {
+  data () {
+    return {}
+  },
 
-      mounted () {
-      }
-    }
+  mounted () {}
+}
 </script>

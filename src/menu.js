@@ -21,5 +21,7 @@ export default [
   { 'header': 'System' },
   { 'href': '/settings', 'title': 'Settings', 'icon': 'settings' },
 
-  { 'href': '/login', 'icon': 'lock', 'title': 'Logout' }
+  { 'href': '/login', 'icon': 'lock', 'title': 'Logout' },
+  { divider: true },
+  { 'header': '系统' }
 ]

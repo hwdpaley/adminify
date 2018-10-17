@@ -27,5 +27,6 @@ export default {
   'Title': '标题',
   'Create {}': '创建',
   'Page Not Found.': '页面不存在',
-  'An admin dashboard based on Vuetify': '基于Vuetify的后台管理UI框架'
+  'An admin dashboard based on Vuetify': '基于Vuetify的后台管理UI框架',
+  'Adminify': '后台系统'
 }
